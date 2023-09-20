@@ -1,0 +1,25 @@
+--------------------------------------
+Create a virtual environment in python : 
+----------------------------------------
+python -m venv /path/to/directory
+	cd Books_app
+	  > python -m venv mysqlenv 
+Activate the virtual environment : 
+	> cd mysqlenv>Scripts
+	 run the commnad : activate 
+
+your prompt shows the my virtual environment : 
+
+to deativate the virutal environment : 
+	run the command  : deactivate 
++++++++++++++++++++++++++++++++++++++++++++
+
+---------------------------------------------
+INSTALLATION OF MYSQL CONNECTOR IN PYTHON : 
+---------------------------------------------
+to install mysql connector to python : 
+ pip install mysql-connector-python
+
+-successfully installed mysql connector..
+++++++++++++++++++++++++++++++++++++++++++++
+
