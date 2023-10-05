@@ -1,44 +1,8 @@
-{
-  "nbformat": 4,
-  "nbformat_minor": 0,
-  "metadata": {
-    "colab": {
-      "provenance": [],
-      "authorship_tag": "ABX9TyO49uRCmJy0GskxpNE0U+fP",
-      "include_colab_link": true
-    },
-    "kernelspec": {
-      "name": "python3",
-      "display_name": "Python 3"
-    },
-    "language_info": {
-      "name": "python"
-    }
-  },
-  "cells": [
-    {
-      "cell_type": "markdown",
-      "metadata": {
-        "id": "view-in-github",
-        "colab_type": "text"
-      },
-      "source": [
-        "<a href=\"https://colab.research.google.com/github/Saipriya3041/Booksapp/blob/main/hangman%20game\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
-      ]
-    },
-    {
-      "cell_type": "code",
-      "execution_count": null,
-      "metadata": {
-        "id": "D-w2mMMqQclc"
-      },
-      "outputs": [],
-      "source": [
         "import random\n",
         "from hangman_words import word_list\n",
         "from hangman_art import stages,logo\n",
         "choosen_word=random.choice(word_list)\n",
-        "lives\n",
+        "lives=6 if len(choosen_word)>=6 else 6
         "#testing code\n",
         "print(f'Psst,the solution is {choosen_words}')\n",
         "print(logo)\n",
