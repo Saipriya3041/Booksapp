@@ -1,0 +1,82 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyO49uRCmJy0GskxpNE0U+fP",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Saipriya3041/Booksapp/blob/main/hangman%20game\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "D-w2mMMqQclc"
+      },
+      "outputs": [],
+      "source": [
+        "import random\n",
+        "from hangman_words import word_list\n",
+        "from hangman_art import stages,logo\n",
+        "choosen_word=random.choice(word_list)\n",
+        "lives\n",
+        "#testing code\n",
+        "print(f'Psst,the solution is {choosen_words}')\n",
+        "print(logo)\n",
+        "print(len(stages))\n",
+        "display=[]\n",
+        "guessed=[]\n",
+        "for i in range(len(choosen_word)):\n",
+        "  display.append(\"_\")\n",
+        "  while \"_\" in display:\n",
+        "    guess=input(\"guess a letter\").lower()\n",
+        "    if(len(guess))==1 and guess.isalpha:\n",
+        "      if guess in guessed:\n",
+        "        print(\"letter already present\")\n",
+        "        continue\n",
+        "      guessed.append(guess)\n",
+        "      for i in range(len(choosen_words)):\n",
+        "        letter=choosen_word[i]\n",
+        "        if letter=guess:\n",
+        "          display[i]=letter\n",
+        "      if guess not in choosen_word:\n",
+        "        if lives>0:\n",
+        "          lives=lives-1\n",
+        "          if lives==0:\n",
+        "            print(\"you lose\n",
+        "            print(stages[lives])\")\n",
+        "            print(f'the solution is {choosen-word}')\n",
+        "            exit(1)\n",
+        "      print(f\"{' '.join(display)}\")\n",
+        "      print(lives)\n",
+        "      print(stages[lives])\n",
+        "    else:\n",
+        "                  print(\"guess should be a character rather than a word\")\n",
+        "else:\n",
+        "                  print(\"you won\")\n",
+        "\n",
+        "\n",
+        "\n"
+      ]
+    }
+  ]
+}
